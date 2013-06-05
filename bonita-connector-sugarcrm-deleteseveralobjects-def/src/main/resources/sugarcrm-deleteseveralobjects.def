@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id>sugarcrm-deleteseveralobjects</id>
+	<version>1.0.0</version>
+	<icon>sugarcrm.png</icon>
+
+	<category id="sugarcrm" icon="sugarcrm.png" />
+
+<input name="login" type="java.lang.String" mandatory="true" />
+<input name="password" type="java.lang.String" mandatory="true" />
+<input name="baseURL" type="java.lang.String" mandatory="true" defaultValue="http://&lt;hostname&gt;:&lt;port&gt;/&lt;sugar_app&gt;" />
+<input name="objectType" type="java.lang.String" mandatory="true" defaultValue="Accounts" />
+<input name="objectIds" type="java.util.List" mandatory="true" />
+
+<page id="ConnectionInformation">
+    <widget id="baseURL" inputName="baseURL" xsi:type="definition:Text" />
+    <widget id="login" inputName="login" xsi:type="definition:Text" />
+    <widget id="password" inputName="password" xsi:type="definition:Password" />
+</page>
+<page id="Parameters">
+    <widget id="objectType" inputName="objectType" xsi:type="definition:Text" />
+    <widget id="objectIds" inputName="objectIds" xsi:type="definition:List" />
+</page>
+
+</definition:ConnectorDefinition>
