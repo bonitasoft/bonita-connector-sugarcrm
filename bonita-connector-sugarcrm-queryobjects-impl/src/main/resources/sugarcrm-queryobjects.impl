@@ -6,7 +6,7 @@
 	<description>Implementation based on sugarCRM 6.5.12</description>
 	<implementationClassname>org.bonitasoft.sugarcrm.QueryObjects</implementationClassname>
 	<implementationId>sugarcrm-queryobjects</implementationId>
-	<implementationVersion>1.0.1</implementationVersion>
+	<implementationVersion>1.0.2</implementationVersion>
 
     $Dependencies$
 

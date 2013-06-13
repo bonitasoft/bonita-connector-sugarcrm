@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 import org.bonitasoft.engine.connector.Connector;
 import org.bonitasoft.engine.connector.ConnectorException;
 import org.bonitasoft.engine.connector.ConnectorValidationException;
+import org.json.simple.JSONObject;
 
 public class QueryObjects implements Connector {
     public static final String LOGIN = "login";
@@ -51,7 +52,7 @@ public class QueryObjects implements Connector {
         LOGGER.info(OFFSET + " " + offset);
         maxResults = (String) parameters.get(MAX_RESULT);
         LOGGER.info(MAX_RESULT + " " + maxResults);
-        selectFields = (List<String>) parameters.get("select_fields");
+        selectFields = (List<String>) parameters.get("selectFields");
         for (String field : selectFields) {
             LOGGER.info("Select field " + field);
         }
@@ -66,7 +67,8 @@ public class QueryObjects implements Connector {
     public Map<String, Object> execute() throws ConnectorException {
         Map<String, Object> result = new HashMap<String, Object>();
         try {
-            sugarCRMUtils.query(sessionId, objectType, query, offset, selectFields, maxResults);
+            JSONObject jsonObject = sugarCRMUtils.query(sessionId, objectType, query, offset, selectFields, maxResults);
+            result.put("jsonObject", jsonObject);
             return result;
         } catch (IOException e) {
             throw new ConnectorException(e);
