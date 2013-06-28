@@ -4,7 +4,8 @@
 	<version>1.0.0</version>
 	<icon>sugarcrm.png</icon>
 
-	<category id="sugarcrm" icon="sugarcrm.png" />
+	<category id="sugarcrm" icon="sugarcrm.png" parentCategoryId="crm"/>
+	
     <input name="login" type="java.lang.String" mandatory="true" />
     <input name="password" type="java.lang.String" mandatory="true" />
     <input name="baseURL" type="java.lang.String" mandatory="true" defaultValue="http://&lt;hostname&gt;:&lt;port&gt;/&lt;sugar_app&gt;" />
