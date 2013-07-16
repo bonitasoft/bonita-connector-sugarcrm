@@ -45,7 +45,9 @@
     </build>
 
     <scm>
-        <developerConnection>scm:svn:https://svn.bonitasoft.org/bonita-connectors-6/branches/connectors/bonita-connector-sugarcrm/bonita-connector-sugarcrm-6.0.x</developerConnection>
+        <developerConnection>scm:git:git@github.com:bonitasoft/bonita-connector-sugarcrm.git</developerConnection>
+        <connection>scm:git:git@github.com:bonitasoft/bonita-connector-sugarcrm.git</connection>
+        <url>https://github.com/bonitasoft/bonita-connector-sugarcrm</url>
     </scm>
-
+    
 </project>
