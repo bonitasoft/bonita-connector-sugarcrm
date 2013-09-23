@@ -4,7 +4,7 @@
     <parent>
         <artifactId>bonita-connectors</artifactId>
         <groupId>org.bonitasoft.connectors</groupId>
-        <version>6.1.0-rc-02</version>
+        <version>6.1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>bonita-connector-sugarcrm</artifactId>
@@ -30,6 +30,22 @@
     </modules>
 
     <build>
+        
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.bonitasoft.connectors</groupId>
+                            <artifactId>bonita-sp-connectors-assembly</artifactId>
+                            <version>6.1.0-SNAPSHOT</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
