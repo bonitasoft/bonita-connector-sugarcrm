@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>bonita-connector-sugarcrm</artifactId>
-    <version>6.1.0-rc-11</version>
+    <version>6.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -47,7 +47,7 @@
         <developerConnection>scm:git:git@github.com:bonitasoft/bonita-connector-sugarcrm.git</developerConnection>
         <connection>scm:git:git@github.com:bonitasoft/bonita-connector-sugarcrm.git</connection>
         <url>https://github.com/bonitasoft/bonita-connector-sugarcrm</url>
-        <tag>bonita-connector-sugarcrm-6.1.0-rc-11</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
