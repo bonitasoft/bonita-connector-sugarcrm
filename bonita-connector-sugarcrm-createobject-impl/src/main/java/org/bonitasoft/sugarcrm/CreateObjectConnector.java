@@ -12,10 +12,13 @@ import org.bonitasoft.engine.connector.ConnectorException;
 import org.bonitasoft.engine.connector.ConnectorValidationException;
 
 public class CreateObjectConnector implements Connector {
-    public static final String LOGIN = "login";
+	
+	public static final String LOGIN = "login";
     public static final String PASSWORD = "password";
     public static final String BASE_URL = "baseURL";
     public static final String OBJECT_TYPE = "objectType";
+    public static final String PARAMETERS = "parameters";
+    
     String login;
     String password;
     String baseURL;
@@ -23,6 +26,7 @@ public class CreateObjectConnector implements Connector {
     Map<String, String> requestParameters;
     String sessionId;
     SugarCRMUtils sugarCRMUtils;
+   
     private Logger LOGGER = Logger.getLogger(this.getClass().getName());
 
     @Override
@@ -35,7 +39,7 @@ public class CreateObjectConnector implements Connector {
         LOGGER.info(BASE_URL + " " + baseURL);
         objectType = (String) parameters.get(OBJECT_TYPE);
         LOGGER.info(OBJECT_TYPE + " " + objectType);
-        requestParameters =  SugarCRMUtils.listToMap((List<List<Object>>) parameters.get("parameters"));
+        requestParameters =  SugarCRMUtils.listToMap((List<List<Object>>) parameters.get(PARAMETERS));
         for (String parameterName : requestParameters.keySet()) {
             LOGGER.info("Parameter " + parameterName + " " + requestParameters.get(parameterName));
         }
