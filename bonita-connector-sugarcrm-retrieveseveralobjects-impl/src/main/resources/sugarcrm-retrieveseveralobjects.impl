@@ -6,7 +6,7 @@
 	<description>Implementation based on sugarCRM 6.5.12</description>
 	<implementationClassname>org.bonitasoft.sugarcrm.RetrieveSeveralObjects</implementationClassname>
 	<implementationId>sugarcrm-retrieveseveralobjects</implementationId>
-	<implementationVersion>1.0.2</implementationVersion>
+	<implementationVersion>$implementation.version$</implementationVersion>
 
     $Dependencies$
 

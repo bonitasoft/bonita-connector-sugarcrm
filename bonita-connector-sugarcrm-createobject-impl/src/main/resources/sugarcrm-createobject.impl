@@ -6,7 +6,7 @@
 	<description>Implementation based on sugarCRM 6.5.12</description>
 	<implementationClassname>org.bonitasoft.sugarcrm.CreateObjectConnector</implementationClassname>
 	<implementationId>sugarcrm-createsobject</implementationId>
-	<implementationVersion>1.0.1</implementationVersion>
+	<implementationVersion>$implementation.version$</implementationVersion>
 
     $Dependencies$
 
