@@ -10,14 +10,14 @@
 	<version>1.0.1</version>
 	
     <properties>
-        <implementation.id>sugarcrm-createobject</implementation.id>
+        <definition.version>1.0.0</definition.version>
     </properties>
 
     <dependencies>
         <dependency>
             <artifactId>bonita-connector-sugarcrm-createobject-def</artifactId>
             <groupId>org.bonitasoft.connectors</groupId>
-            <version>1.0.0</version>
+           <version>${definition.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -27,7 +27,7 @@
         <dependency>
             <groupId>org.bonitasoft.connectors</groupId>
             <artifactId>bonita-connector-sugarcrm-sugarcrmutils</artifactId>
-            <version>${sugarcrmutils.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
           <dependency>
             <groupId>org.apache.httpcomponents</groupId>

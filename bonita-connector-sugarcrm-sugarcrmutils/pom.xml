@@ -8,10 +8,6 @@
 
     <artifactId>bonita-connector-sugarcrm-sugarcrmutils</artifactId>
 
-    <properties>
-        <implementation.id>sugarcrm-createobject</implementation.id>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>

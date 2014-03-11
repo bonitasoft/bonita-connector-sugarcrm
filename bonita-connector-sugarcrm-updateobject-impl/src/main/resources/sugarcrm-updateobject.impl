@@ -2,7 +2,7 @@
 <implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
 
 	<definitionId>sugarcrm-updateobject</definitionId>
-	<definitionVersion>1.0.0</definitionVersion>
+	<definitionVersion>$definition.version$</definitionVersion>
 	<description>Implementation based on sugarCRM 6.5.12</description>
 	<implementationClassname>org.bonitasoft.sugarcrm.UpdateObject</implementationClassname>
 	<implementationId>sugarcrm-updateobject</implementationId>

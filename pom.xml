@@ -10,6 +10,7 @@
 
 	<artifactId>bonita-connector-sugarcrm</artifactId>
 	<packaging>pom</packaging>
+	<version>1.0.0</version>
 
 	<modules>
 		<module>bonita-connector-sugarcrm-createobject-def</module>
@@ -31,7 +32,6 @@
 
 	<properties>
 		<bonita.engine.version>6.2.0</bonita.engine.version>
-		<sugarcrmutils.version>1.0.0</sugarcrmutils.version>
 	</properties>
 
 	<dependencies>
